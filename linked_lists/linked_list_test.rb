@@ -219,6 +219,7 @@ class IterativeLinkedListTest < Minitest::Test
   end
 
   def test_dequeue_treates_list_like_a_stack
+    skip
     list.push("hello")
     list.push("pizza")
     list.push("world")

@@ -83,6 +83,9 @@ various properties. Let's run through a few of these:
 * __Connected:__ A graph where all vertices can be reached from any other vertex -- i.e. every vertex is
   connected via some sequence of edges. (Opposite would be a __Disconnected Graph__)
 
+* __Strongly Connected:__ A graph is _strongly_ connected if every vertex is reachable from every other
+  vertex.
+
 ### Categorizing a Graph
 
 An example graph can often be categorized across several of the types mentioned above.

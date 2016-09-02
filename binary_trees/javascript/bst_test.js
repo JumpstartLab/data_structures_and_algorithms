@@ -4,19 +4,19 @@ describe('TreeNode', function(){
       expect(node.data).to.eq(0);
     });
 
-    xit('should have a default null value for left and right nodes', function(){
+    it('should have a default null value for left and right nodes', function(){
       var node = new TreeNode(0);
       expect(node.left).to.eq(null);
       expect(node.right).to.eq(null);
     });
 
-    xit('can have a left node', function(){
+    it('can have a left node', function(){
       var node1 = new TreeNode(1);
       var node2 = new TreeNode(0, node1);
       expect(node2.left.data).to.eq(1);
     });
 
-    xit('can assign a right node', function(){
+    it('can assign a right node', function(){
       var node1 = new TreeNode(1);
       var node2 = new TreeNode(0, null, node1);
       expect(node2.right.data).to.eq(1);
@@ -31,7 +31,7 @@ describe('BST', function() {
   });
 
   context('when list is empty', function(){
-    xit('rootNode is null', function(){
+    it('rootNode is null', function(){
       expect(tree.rootNode).to.eq(null);
     });
   });
@@ -41,7 +41,7 @@ describe('BST', function() {
     // provide a nicer interface, we will accept raw numbers as inputs to
     // push, and handle wrapping the data in a Node internally
     context('when the tree is empty', function(){
-      xit('creates a new root node', function(){
+      it('creates a new root node', function(){
         tree.push(1);
         expect(tree.rootNode instanceof TreeNode).to.be.true;
         expect(tree.rootNode.data).to.eq(1)
@@ -49,7 +49,7 @@ describe('BST', function() {
     });
 
     context('when tree has only a rootNode', function(){
-      xit('smaller data is added to the left', function(){
+      it('smaller data is added to the left', function(){
         tree.push(5);
         expect(tree.rootNode.data).to.eq(5);
         tree.push(4);

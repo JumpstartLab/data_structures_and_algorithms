@@ -5,7 +5,7 @@ describe('LinkedList', function() {
     list = new List();
   });
 
-  it.skip('should start with zero elements', function() {
+  it('should start with zero elements', function() {
     expect(list._length).to.eq(0);
   });
 
